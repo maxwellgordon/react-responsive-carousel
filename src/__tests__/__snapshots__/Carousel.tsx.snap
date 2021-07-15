@@ -1604,6 +1604,51 @@ exports[`Slider Snapshots infinite loop 1`] = `
           style={Object {}}
         >
           <img
+            src="assets/2.jpeg"
+          />
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            src="assets/3.jpeg"
+          />
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            src="assets/4.jpeg"
+          />
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            src="assets/5.jpeg"
+          />
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            src="assets/6.jpeg"
+          />
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
             src="assets/7.jpeg"
           />
         </li>
@@ -1677,6 +1722,51 @@ exports[`Slider Snapshots infinite loop 1`] = `
         >
           <img
             src="assets/1.jpeg"
+          />
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            src="assets/2.jpeg"
+          />
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            src="assets/3.jpeg"
+          />
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            src="assets/4.jpeg"
+          />
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            src="assets/5.jpeg"
+          />
+        </li>
+        <li
+          className="slide"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            src="assets/6.jpeg"
           />
         </li>
       </ul>

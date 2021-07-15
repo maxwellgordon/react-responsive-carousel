@@ -41,6 +41,7 @@ export default class Carousel extends React.Component<CarouselProps, CarouselSta
         onSwipeEnd: () => {},
         onSwipeMove: () => false,
         preventMovementUntilSwipeScrollTolerance: false,
+        repeatOnInfinite: true,
         renderArrowPrev: (onClickHandler: () => void, hasPrev: boolean, label: string) => (
             <button type="button" aria-label={label} className={klass.ARROW_PREV(!hasPrev)} onClick={onClickHandler} />
         ),
@@ -765,9 +766,11 @@ export default class Carousel extends React.Component<CarouselProps, CarouselSta
                                 {...swiperProps}
                                 allowMouseEvents={this.props.emulateTouch}
                             >
+                                {this.props.infiniteLoop && this.props.repeatOnInfinite && itemsClone}
                                 {this.props.infiniteLoop && lastClone}
                                 {this.renderItems()}
                                 {this.props.infiniteLoop && firstClone}
+                                {this.props.infiniteLoop && this.props.repeatOnInfinite && itemsClone}
                             </Swipe>
                         ) : (
                             <ul
@@ -775,9 +778,11 @@ export default class Carousel extends React.Component<CarouselProps, CarouselSta
                                 ref={(node: HTMLUListElement) => this.setListRef(node)}
                                 style={this.state.itemListStyle || {}}
                             >
+                                {this.props.infiniteLoop && this.props.repeatOnInfinite && itemsClone}
                                 {this.props.infiniteLoop && lastClone}
                                 {this.renderItems()}
                                 {this.props.infiniteLoop && firstClone}
+                                {this.props.infiniteLoop && this.props.repeatOnInfinite && itemsClone}
                             </ul>
                         )}
                     </div>
