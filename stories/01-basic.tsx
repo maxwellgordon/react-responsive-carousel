@@ -61,6 +61,7 @@ export const centerMode = () => (
         infiniteLoop
         centerMode
         centerSlidePercentage={number('centerSlidePercentage', 80, {}, mainGroupId)}
+        withoutExtraItemOnInfinite={boolean('withoutExtraItemOnInfinite', false, mainGroupId)}
         {...getConfigurableProps()}
     >
         {baseChildren.props.children}

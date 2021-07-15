@@ -670,13 +670,13 @@ describe('Slider', function() {
                     .find('.slide')
                     .at(0)
                     .key()
-            ).toContain('itemKey1clone');
+            ).toContain('itemKey6clone');
             expect(
                 component
                     .find('.slide')
-                    .at(15)
+                    .at(8)
                     .key()
-            ).toContain('itemKey2clone');
+            ).toContain('itemKey0clone');
         });
 
         it('should work with minimal children', () => {
@@ -1065,7 +1065,7 @@ describe('Slider', function() {
                 });
                 const props = componentInstance.props;
 
-                expect(getPosition(0, props)).toBe(0);
+                expect(getPosition(0, props)).toBe(-0);
                 expect(getPosition(1, props)).toBe(-100);
                 expect(getPosition(2, props)).toBe(-200);
                 expect(getPosition(3, props)).toBe(-300);
@@ -1076,7 +1076,7 @@ describe('Slider', function() {
 
             it('should return padded transform calculation for horizontal axis', () => {
                 const props = componentInstance.props;
-                expect(getPosition(0, props)).toBe(0);
+                expect(getPosition(0, props)).toBe(10);
                 expect(getPosition(1, props)).toBe(-70);
                 expect(getPosition(2, props)).toBe(-150);
                 expect(getPosition(3, props)).toBe(-230);
@@ -1094,7 +1094,7 @@ describe('Slider', function() {
 
                 const props = componentInstance.props;
 
-                expect(getPosition(0, props)).toBe(0);
+                expect(getPosition(0, props)).toBe(25);
                 expect(getPosition(1, props)).toBe(-25);
                 expect(getPosition(2, props)).toBe(-75);
                 expect(getPosition(3, props)).toBe(-125);

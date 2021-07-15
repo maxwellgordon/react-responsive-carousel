@@ -43,7 +43,6 @@ export interface CarouselProps {
     onSwipeEnd: (event: React.TouchEvent) => void;
     onSwipeMove: (event: React.TouchEvent) => boolean;
     preventMovementUntilSwipeScrollTolerance: boolean;
-    repeatOnInfinite?: boolean;
     renderArrowPrev: (clickHandler: () => void, hasPrev: boolean, label: string) => React.ReactNode;
     renderArrowNext: (clickHandler: () => void, hasNext: boolean, label: string) => React.ReactNode;
     renderIndicator: (
@@ -68,6 +67,7 @@ export interface CarouselProps {
     useKeyboardArrows?: boolean;
     verticalSwipe: 'natural' | 'standard';
     width: number | string;
+    withoutExtraItemOnInfinite?: boolean;
     animationHandler: 'slide' | 'fade' | AnimationHandler;
     swipeAnimationHandler: SwipeAnimationHandler;
     stopSwipingHandler: StopSwipingHandler;

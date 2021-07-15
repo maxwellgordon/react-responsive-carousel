@@ -14,13 +14,9 @@ export const isKeyboardEvent = (e?: React.MouseEvent | React.KeyboardEvent): e i
  * @param index
  */
 export const getPosition = (index: number, props: CarouselProps): number => {
-    if (props.infiniteLoop) {
+    if (props.infiniteLoop && !props.withoutExtraItemOnInfinite) {
         // index has to be added by 1 because of the first cloned slide
         ++index;
-    }
-
-    if (index === 0) {
-        return 0;
     }
 
     const childrenLength = Children.count(props.children);
@@ -28,7 +24,7 @@ export const getPosition = (index: number, props: CarouselProps): number => {
         let currentPosition = -index * props.centerSlidePercentage;
         const lastPosition = childrenLength - 1;
 
-        if (index && (index !== lastPosition || props.infiniteLoop)) {
+        if (index !== lastPosition || props.infiniteLoop) {
             currentPosition += (100 - props.centerSlidePercentage) / 2;
         } else if (index === lastPosition) {
             currentPosition += 100 - props.centerSlidePercentage;
