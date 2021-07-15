@@ -670,13 +670,13 @@ describe('Slider', function() {
                     .find('.slide')
                     .at(0)
                     .key()
-            ).toContain('itemKey6clone');
+            ).toContain('itemKey1clone');
             expect(
                 component
                     .find('.slide')
-                    .at(8)
+                    .at(15)
                     .key()
-            ).toContain('itemKey0clone');
+            ).toContain('itemKey2clone');
         });
 
         it('should work with minimal children', () => {
